@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="8dp"
+    app:cardCornerRadius="10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/image_item_movie"
+            android:layout_width="110dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerInside"
+            android:src="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/image_item_movie"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/image_item_movie">
+
+            <TextView
+                android:id="@+id/tv_title_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title Video"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_rd_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overview"
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_sans"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
